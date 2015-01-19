@@ -35,5 +35,7 @@ In the end it's usually easier to put up with all the nasty XML/SVG markup so yo
 If you really want to do this with external files, [check out example 1a](http://theeatingmachine.com/animationfortheweb/ex1-a).
 
 Note that the CSS stylesheet is embedded inside the SVG:
+
 `<?xml-stylesheet type="text/css" href="style.css" ?>`
+
 There are many other drawback and slight annoyances that you will notice in the example, but once it works it can be fun to use.  Oh, also needs to be run on a local server, <a href="http://lifehacker.com/start-a-simple-web-server-from-any-directory-on-your-ma-496425450" target="blank">here's how to do that</a>. 
