@@ -1,0 +1,15 @@
+.blue {
+	fill:lightblue;
+	transition:fill 300ms;
+}
+.blue:hover {
+	fill:blue;
+}
+
+.green {
+	fill:lightgreen;
+	transition:fill 300ms;
+}
+.green:hover {
+	fill:green;
+}

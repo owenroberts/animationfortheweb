@@ -8,7 +8,7 @@ First to get started we'll look at a quick example for using CSS with SVG.  I'm 
 
 [Example](http://theeatingmachine.com/animationfortheweb/ex1-links)
 
-Once you have drawn your links, save the SVG.  Illustrator will present a bunch of options.  You want to choose SVG 1.1, Type: SVG, Subsetting: None, Image Location: Link, Advanced Options -- CSS Properties: Style Attributes.  Everything else you can leave alone.  <a href="http://creativedroplets.com/export-svg-for-the-web-with-illustrator-cc/" target="blank">Here's an article</a> that explains these attributes in more detail, and goes over some optimization.  There are other tools for SVG optimation worth checking out like <a href="https://github.com/svg/svgo" target="blank">SVGO</a>.
+Once you have drawn your links, save the SVG.  Make sure you keep a copy of the original drawing as a `.ai` file, because we'll be modifying the SVG file, which could make it have errors when it's opened in Illustrator again.  Illustrator will present a bunch of options.  You want to choose SVG 1.1, Type: SVG, Subsetting: None, Image Location: Link, Advanced Options -- CSS Properties: Style Attributes.  Everything else you can leave alone.  <a href="http://creativedroplets.com/export-svg-for-the-web-with-illustrator-cc/" target="blank">Here's an article</a> that explains these attributes in more detail, and goes over some optimization.  There are other tools for SVG optimation worth checking out like <a href="https://github.com/svg/svgo" target="blank">SVGO</a>.
 
 So the great thing about using basic CSS with SVG is that SVG acts sort of like a font when it comes to creating transitions and changing colors, etc.  Unlike PNGs or JPGS, we can change the color of the SVG on each page, change the transition and anything else we can do with CSS.
 
@@ -24,6 +24,16 @@ After adding the optimized SVG markup to my index page, I'm going to add a class
 	fill:blue;
 }
 ```
-
-
 You can actually do a lot of the stuff we'll be doing with SVG with CSS3 animations.  <a href="http://24ways.org/2012/flashless-animation/" target="blank">Here's a good tutorial to check out for that</a>.
+
+###Embedding SVGs
+
+You've probably noticed that the SVG markup looks really nasty inside your nice HTML page.  It would be a lot nicer to link the SVG file via a tag like `img` or something like that wouldn't it?  That's possible but it presents some problems.  SVGs can be embedded with `img`, `embed`, `object` and `iframe`, but each one has advantages and disadvantages.  `img` won't work with CSS stylesheets.  `object` is the preferred method, because it allows for each PNG or image fallbacks, but has limited support for scripting.  `object` is the best to use for scripting purposes, but also has problems with loading because of the same-origin blocks in modern browsers.  This article explains the <a href="http://thoughtfulweb.co.uk/thoughts/about/the-best-way-to-add-an-svg-image-to-your-website" target="blank">best ways to embed SVG</a>, and this shows <a href="http://www.schepers.cc/svg/blendups/embedding.html" target="blank">all the embed tags</a>.
+
+In the end it's usually easier to put up with all the nasty XML/SVG markup so you can write scripts directly into the page, but in later examples we'll actually be scripting directly into the SVG itself.
+
+If you really want to do this with external files, [check out example 1a](http://theeatingmachine.com/animationfortheweb/ex1-a).
+
+Note that the CSS stylesheet is embedded inside the SVG:
+`<?xml-stylesheet type="text/css" href="style.css" ?>`
+There are many other drawback and slight annoyances that you will notice in the example, but once it works it can be fun to use.  Oh, also needs to be run on a local server, <a href="http://lifehacker.com/start-a-simple-web-server-from-any-directory-on-your-ma-496425450" target="blank">here's how to do that</a>. 
