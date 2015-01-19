@@ -14,7 +14,7 @@ So the great thing about using basic CSS with SVG is that SVG acts sort of like 
 
 After adding the optimized SVG markup to my index page, I'm going to add a class and then write some CSS for that class:
 
-`<svg class="blue">
+`<svg class="blue">`
 ```
 .blue {
 	fill:lightblue;
