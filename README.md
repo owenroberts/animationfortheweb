@@ -14,14 +14,16 @@ So the great thing about using basic CSS with SVG is that SVG acts sort of like 
 
 After adding the optimized SVG markup to my index page, I'm going to add a class and then write some CSS for that class:
 
-'''<svg class="blue">'''
-'''.blue {
-			fill:lightblue;
-			transition:fill 300ms;
-		}
-		.blue:hover {
-			fill:blue;
-		}'''
+`<svg class="blue">
+```
+.blue {
+	fill:lightblue;
+	transition:fill 300ms;
+}
+.blue:hover {
+	fill:blue;
+}
+```
 
 
 You can actually do a lot of the stuff we'll be doing with SVG with CSS3 animations.  <a href="http://24ways.org/2012/flashless-animation/" target="blank">Here's a good tutorial to check out for that</a>.
