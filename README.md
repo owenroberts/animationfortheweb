@@ -6,4 +6,4 @@ This workshop will cover some basic methods for using SVG based animations in th
 
 
 
-You can actually do a lot of the stuff we'll be doing with SVG with CSS3 animations.  [Here's a good tutorial to check out for that](http://24ways.org/2012/flashless-animation/).
+You can actually do a lot of the stuff we'll be doing with SVG with CSS3 animations.  <a href="http://24ways.org/2012/flashless-animation/" target="blank">Here's a good tutorial to check out for that</a>.
