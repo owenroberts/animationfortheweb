@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<title>Animation for the Web - Example 4 - Automation</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<style>
+	#scene {
+		position:fixed;
+		top:0;
+	}
+	p {
+		position:absolute;
+		bottom:10px;
+	}
+
+	</style>
+</head>
+<body>
+<h1>Example 4</h1>
+	<div id="scene">
+
+		<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1024" height="512" viewBox="0 0 1024 512">
+
+		<defs>
+			<animate xlink:href="#line" id="swipe" attributeName="height"
+         		from="1000" to="0" begin="0s" dur="0.5s" />
+		</defs>
+
+		</svg>
+	</div>
+	
+
+<p><a href="/index.html">back</a></p>
+
+
+	<script type="text/javascript">
+		var draw=false; 
+		var getRand = function(min, max) {
+    		return Math.floor(Math.random() * (max - min + 1)) + min;
+		}	
+		var svg = document.getElementById('svg');
+
+		
+		var newPath = function(_x, _y) {
+			var time = svg.getCurrentTime();
+
+			var anim = document.createElementNS(svg.namespaceURI,"animate");
+			anim.setAttributeNS(null, "attributeName", "height");
+			anim.setAttributeNS(null, "from", "0");
+			anim.setAttributeNS(null, "to", getRand(10,100));
+			anim.setAttributeNS(null, "begin", time);
+			anim.setAttributeNS(null, "dur", "1s");
+			anim.setAttributeNS(null, "fill", "freeze");
+			
+			//var h = getRand(10, 100);
+			newpath = document.createElementNS(svg.namespaceURI,"rect");  
+			newpath.setAttributeNS(null, "id", "line");
+			newpath.setAttributeNS(null, "x", _x);
+			newpath.setAttributeNS(null, "y", _y);
+			newpath.setAttributeNS(null, "width", "1");
+			newpath.setAttributeNS(null, "height", "0"); 
+			newpath.setAttributeNS(null, "stroke", "black");
+			newpath.appendChild(anim);
+			svg.appendChild(newpath);
+
+		}
+		window.onmousedown =function() {
+			draw = true;
+		}
+		window.onmouseup =function() {
+			draw = false;
+		}
+		window.onmousemove = function(e) {
+			console.log(e);
+			if (draw) newPath(e.x, e.y);
+		}
+		
+	</script>
+
+</body>
+</html>

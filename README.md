@@ -6,7 +6,7 @@ This workshop will cover some basic methods for using SVG based animations in th
 
 First to get started we'll look at a quick example for using CSS with SVG.  I'm going to start by drawing some link titles in Illustrator and add some transitions using CSS.  If you don't want to buy Illustrator, try downloading <a href="https://inkscape.org/en/" target="blank">Inkscape</a>.
 
-[Example](http://theeatingmachine.com/animationfortheweb/ex1-links)
+[Example](http://theeatingmachine.com/animationfortheweb/ex1/index.html)
 
 Once you have drawn your links, save the SVG.  Make sure you keep a copy of the original drawing as a `.ai` file, because we'll be modifying the SVG file, which could make it have errors when it's opened in Illustrator again.  Illustrator will present a bunch of options.  You want to choose SVG 1.1, Type: SVG, Subsetting: None, Image Location: Link, Advanced Options -- CSS Properties: Style Attributes.  Everything else you can leave alone.  <a href="http://creativedroplets.com/export-svg-for-the-web-with-illustrator-cc/" target="blank">Here's an article</a> that explains these attributes in more detail, and goes over some optimization.  There are other tools for SVG optimation worth checking out like <a href="https://github.com/svg/svgo" target="blank">SVGO</a>.
 
@@ -39,3 +39,51 @@ Note that the CSS stylesheet is embedded inside the SVG:
 `<?xml-stylesheet type="text/css" href="style.css" ?>`
 
 There are many other drawback and slight annoyances that you will notice in the example, but once it works it can be fun to use.  Oh, also needs to be run on a local server, <a href="http://lifehacker.com/start-a-simple-web-server-from-any-directory-on-your-ma-496425450" target="blank">here's how to do that</a>. 
+
+###Animation types
+
+SVG animation is achieved with <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL" target="blank">SMIL</a>, or Synchronized Multimedia Integration Language.  There are few different ways we can animate SVG graphics using this specialized markup language within an SVG.  Make sure to save copies of your SVGs, because these tags can be rewritten if you make changes in Illustrator.
+
+`animate` or `set` for basic attributes like `x` or `y`
+`animateTransform` for attributes like `scale` or `rotate`
+`animateColor` for color attributes like `fill` and `stroke`
+`animateMotion` to animate along a path
+
+For animations to run they need these basic attributes (there are many others that can be added)
+
+`attributeName` or what to animate
+`from` where to start
+`to` where to end 
+`dur` length of animation
+
+We'll look at examples of each type in [Example 2](http://theeatingmachine.com/animationfortheweb/ex2/index.html).
+
+###Scripting & Interaction
+
+SVG attributes can be changed through <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/script" target="blank">scripts</a>, and animations can be triggered by various inputs.
+
+We'll look at using ids to trigger the beginning of animations with the `begin` attribute as well as JavaScript based interactions.
+[Example 3](http://theeatingmachine.com/animationfortheweb/ex3/index.html)
+
+
+###Generation
+
+We can also generate new SVG elements in JavaScript.  As we'll see in the example, this is kind of a pain, which is why there are many great libraries to check out for more advanced interaction and scripting.
+
+[Example 4](http://theeatingmachine.com/animationfortheweb/ex4/index.html)
+
+Libraries:
+<a href="http://paperjs.org/" target="blank">Paper</a>
+<a href="http://d3js.org/" target="blank">d3</a>
+<a href="http://raphaeljs.com/" target="blank">Raphael</a>
+<a href="http://snapsvg.io/" target="blank">Snap</a>
+<a href="http://fabricjs.com/" target="blank">Fabric</a>
+<a href="http://lazylinepainter.info/" target="blank">Lazy Line Painter</a>
+
+
+
+
+####References
+Some tutorials that I looked at to construct this workshop (that aren't previously mentioned):
+http://www.smashingmagazine.com/2014/11/03/styling-and-animating-svgs-with-css/
+http://www.hongkiat.com/blog/scalable-vector-graphics-animation/

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="512" viewBox="0 0 1024 512">
+
+	<defs>
+		<linearGradient id="bkg"  x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(110)">
+			<stop offset="0" stop-color="#9b4efc">
+				<animate fill="freeze" attributeName="stop-color" to="#3bf38f" begin="0s" dur="10s"/>
+			</stop>
+			<stop offset="100%" stop-color="white">
+				<animate fill="freeze" attributeName="stop-color" to="green" begin="0s" dur="10s"/>
+			</stop>
+		</linearGradient>
+	</defs>
+
+	<rect width="1024" height="512" fill="url(#bkg)" />
+
+
+	<path fill="none" stroke="#8417C4" stroke-width="3" stroke-miterlimit="10" d="M-3 46.5h1031M-3 64.5h1031M-3 93.5h1031M-3 77.5h1031M-7 109.5h1038M-3 131.5h1034M-3 116.5h1034" stroke-dasharray="50" stroke-dashoffset="1000">
+		<animate attributeName="stroke-dashoffset" from="1000" to="-1000" dur="5s" begin="1s" fill="freeze" repeatCount="indefinite" />
+	</path>
+
+	<path fill="none" stroke="#674EFF" stroke-width="3" stroke-miterlimit="10" >
+	<animate attributeName="d" begin="0s" dur="2s" repeatCount="indefinite" values="
+		M90.3 141.9c5.6-16.1 21-46.2 42-38.5s16.8 46.9 32.9 43.4 21.7-41.3 32.9-41.3 21 42.7 21 62.2; 
+		M43.5 128.2c5.6-16.1 41.5-22.6 62.5-14.9s43.1 37 59.2 33.5S207.8 114 219 114s56.3 20.6 56.3 40.2;
+		M90.3 141.9c5.6-16.1 21-46.2 42-38.5s16.8 46.9 32.9 43.4 21.7-41.3 32.9-41.3 21 42.7 21 62.2
+		"/>
+	<animateMotion rotate="auto" begin="0" dur="10s" fill="freeze" path="M21.1 280.4C44.2 197.2 35.8 37.7 154.6 56.6s87.4 176.2 11.9 209.1-43.4 261.5 108.7 149.7 68.2-78.3 147.9-181.8C502.8 130.1 477.6-40.5 386 17.5s-230 296.5-97.8 314 17.5 153.8 154.5 97.2 165-119.6 165-119.6"/>
+	</path>
+</svg>
