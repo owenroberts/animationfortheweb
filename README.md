@@ -2,6 +2,12 @@
 
 This workshop will cover some basic methods for using SVG based animations in the browser.  SVG stands for Scalable Vector Graphics, it's an XML based vector graphic format that can be exported from Adobe Illustrator (or other vector graphics programs) and can interact with CSS and JavaScript like other HTML elements.  Through some examples we'll look at some cool things we can do with SVG on the web, without using any extra libraries, using CSS transitions, inline scriping and JavaScript.
 
+Some cool stuff to look at:
+http://24ways.org/2012/flashless-animation/
+http://blabla.nfb.ca/#/blabla
+http://wildnatureinkazan.ru/
+http://www.drawastickman.com/
+
 ###Basic example, SVG links with CSS transitions
 
 First to get started we'll look at a quick example for using CSS with SVG.  I'm going to start by drawing some link titles in Illustrator and add some transitions using CSS.  If you don't want to buy Illustrator, try downloading <a href="https://inkscape.org/en/" target="blank">Inkscape</a>.
@@ -49,7 +55,7 @@ SVG animation is achieved with <a href="https://developer.mozilla.org/en-US/docs
 `animateColor` for color attributes like `fill` and `stroke`  
 `animateMotion` to animate along a path
 
-For animations to run they need these basic attributes (there are many others that can be added)
+For animations to run they need these basic attributes (there are many others that can be added, for example,  check out the <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/calcMode" target="blank">calcMode attribute</a> for easing).
 
 `attributeName` or what to animate
 `from` where to start
@@ -57,6 +63,8 @@ For animations to run they need these basic attributes (there are many others th
 `dur` length of animation
 
 We'll look at examples of each type in [Example 2](http://theeatingmachine.com/animationfortheweb/ex2/index.html).  
+
+
 
 ###Scripting & Interaction
 
@@ -85,5 +93,6 @@ Libraries:
 
 ####References
 Some tutorials that I looked at to construct this workshop (that aren't previously mentioned):
+https://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_animation
 http://www.smashingmagazine.com/2014/11/03/styling-and-animating-svgs-with-css/
 http://www.hongkiat.com/blog/scalable-vector-graphics-animation/
