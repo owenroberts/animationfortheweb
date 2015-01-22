@@ -2,11 +2,11 @@
 
 This workshop will cover some basic methods for using SVG based animations in the browser.  SVG stands for Scalable Vector Graphics, it's an XML based vector graphic format that can be exported from Adobe Illustrator (or other vector graphics programs) and can interact with CSS and JavaScript like other HTML elements.  Through some examples we'll look at some cool things we can do with SVG on the web, without using any extra libraries, using CSS transitions, inline scriping and JavaScript.
 
-Some cool stuff to look at:
-http://24ways.org/2012/flashless-animation/
-http://blabla.nfb.ca/#/blabla
-http://wildnatureinkazan.ru/
-http://www.drawastickman.com/
+Some cool stuff to look at:  
+http://24ways.org/2012/flashless-animation/  
+http://blabla.nfb.ca/#/blabla  
+http://wildnatureinkazan.ru/  
+http://www.drawastickman.com/  
 
 ###Basic example, SVG links with CSS transitions
 
