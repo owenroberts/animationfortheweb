@@ -44,9 +44,9 @@ There are many other drawback and slight annoyances that you will notice in the 
 
 SVG animation is achieved with <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL" target="blank">SMIL</a>, or Synchronized Multimedia Integration Language.  There are few different ways we can animate SVG graphics using this specialized markup language within an SVG.  Make sure to save copies of your SVGs, because these tags can be rewritten if you make changes in Illustrator.
 
-`animate` or `set` for basic attributes like `x` or `y`
-`animateTransform` for attributes like `scale` or `rotate`
-`animateColor` for color attributes like `fill` and `stroke`
+`animate` or `set` for basic attributes like `x` or `y`  
+`animateTransform` for attributes like `scale` or `rotate`  
+`animateColor` for color attributes like `fill` and `stroke`  
 `animateMotion` to animate along a path
 
 For animations to run they need these basic attributes (there are many others that can be added)
