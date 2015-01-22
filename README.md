@@ -8,6 +8,11 @@ http://blabla.nfb.ca/#/blabla
 http://wildnatureinkazan.ru/  
 http://www.drawastickman.com/  
 
+References  
+http://w3c.github.io/web-animations/  
+https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL  
+https://developer.mozilla.org/en-US/docs/Web/SVG  
+
 ###Basic example, SVG links with CSS transitions
 
 First to get started we'll look at a quick example for using CSS with SVG.  I'm going to start by drawing some link titles in Illustrator and add some transitions using CSS.  If you don't want to buy Illustrator, try downloading <a href="https://inkscape.org/en/" target="blank">Inkscape</a>.
@@ -91,8 +96,12 @@ Libraries:
 
 
 
-####References
+####Resources
 Some tutorials that I looked at to construct this workshop (that aren't previously mentioned):
 https://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_animation
 http://www.smashingmagazine.com/2014/11/03/styling-and-animating-svgs-with-css/
 http://www.hongkiat.com/blog/scalable-vector-graphics-animation/
+http://design.tutsplus.com/tutorials/svg-files-from-illustrator-to-the-web--vector-20899
+http://css-tricks.com/guide-svg-animations-smil/
+http://commons.oreilly.com/wiki/index.php/SVG_Essentials/Animating_and_Scripting_SVG
+http://blog.teamtreehouse.com/svg-path-animation-with-jquery-and-illustrator
