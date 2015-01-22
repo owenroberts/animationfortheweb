@@ -56,13 +56,13 @@ For animations to run they need these basic attributes (there are many others th
 `to` where to end 
 `dur` length of animation
 
-We'll look at examples of each type in [Example 2](http://theeatingmachine.com/animationfortheweb/ex2/index.html).
+We'll look at examples of each type in [Example 2](http://theeatingmachine.com/animationfortheweb/ex2/index.html).  
 
 ###Scripting & Interaction
 
-SVG attributes can be changed through <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/script" target="blank">scripts</a>, and animations can be triggered by various inputs.
+SVG attributes can be changed through <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/script" target="blank">scripts</a>, and animations can be triggered by various inputs.  
 
-We'll look at using ids to trigger the beginning of animations with the `begin` attribute as well as JavaScript based interactions.
+We'll look at using ids to trigger the beginning of animations with the `begin` attribute as well as JavaScript based interactions.  
 [Example 3](http://theeatingmachine.com/animationfortheweb/ex3/index.html)
 
 
