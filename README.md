@@ -17,7 +17,7 @@ https://developer.mozilla.org/en-US/docs/Web/SVG
 
 First to get started we'll look at a quick example for using CSS with SVG.  I'm going to start by drawing some link titles in Illustrator and add some transitions using CSS.  If you don't want to buy Illustrator, try downloading <a href="https://inkscape.org/en/" target="blank">Inkscape</a>.
 
-[Example](http://theeatingmachine.com/animationfortheweb/ex1/index.html)
+[Example](http://owenroberts.github.io/animationfortheweb/ex1/index.html)
 
 Once you have drawn your links, save the SVG.  Make sure you keep a copy of the original drawing as a `.ai` file, because we'll be modifying the SVG file, which could make it have errors when it's opened in Illustrator again.  Illustrator will present a bunch of options.  You want to choose SVG 1.1, Type: SVG, Subsetting: None, Image Location: Link, Advanced Options -- CSS Properties: Style Attributes.  Everything else you can leave alone.  <a href="http://creativedroplets.com/export-svg-for-the-web-with-illustrator-cc/" target="blank">Here's an article</a> that explains these attributes in more detail, and goes over some optimization.  There are other tools for SVG optimation worth checking out like <a href="https://github.com/svg/svgo" target="blank">SVGO</a>.
 
@@ -43,7 +43,7 @@ You've probably noticed that the SVG markup looks really nasty inside your nice 
 
 In the end it's usually easier to put up with all the nasty XML/SVG markup so you can write scripts directly into the page, but in later examples we'll actually be scripting directly into the SVG itself.
 
-If you really want to do this with external files, [check out example 1a](http://theeatingmachine.com/animationfortheweb/ex1-a).
+If you really want to do this with external files, [check out example 1a](http://owenroberts.github.io/animationfortheweb/ex1-a).
 
 Note that the CSS stylesheet is embedded inside the SVG:
 
@@ -67,7 +67,7 @@ For animations to run they need these basic attributes (there are many others th
 `to` where to end 
 `dur` length of animation
 
-We'll look at examples of each type in [Example 2](http://theeatingmachine.com/animationfortheweb/ex2/index.html).  
+We'll look at examples of each type in [Example 2](http://owenroberts.github.io/animationfortheweb/ex2/index.html).  
 
 
 
@@ -76,14 +76,14 @@ We'll look at examples of each type in [Example 2](http://theeatingmachine.com/a
 SVG attributes can be changed through <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/script" target="blank">scripts</a>, and animations can be triggered by various inputs.  
 
 We'll look at using ids to trigger the beginning of animations with the `begin` attribute as well as JavaScript based interactions.  
-[Example 3](http://theeatingmachine.com/animationfortheweb/ex3/index.html)
+[Example 3](http://owenroberts.github.io/animationfortheweb/ex3/index.html)
 
 
 ###Generation
 
 We can also generate new SVG elements in JavaScript.  As we'll see in the example, this is kind of a pain, which is why there are many great libraries to check out for more advanced interaction and scripting.
 
-[Example 4](http://theeatingmachine.com/animationfortheweb/ex4/index.html)
+[Example 4](http://owenroberts.github.io/animationfortheweb/ex4/index.html)
 
 Libraries:
 <a href="http://paperjs.org/" target="blank">Paper</a>
